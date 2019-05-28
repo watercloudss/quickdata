@@ -13,7 +13,7 @@ spring boot配置阿里的druid数据库连接池<br>
             <version>1.1.8</version>
         </dependency>
 ```
-2.在项目中的配置文件（这里使用的是yml格式的配置文件）中配置使用druid，其中很重要的是`type: com.alibaba.druid.pool.DruidDataSource`,这里表明你使用的是druid数据源，
+2.在项目中的配置文件（这里使用的是yml格式的配置文件，注意：yml里格式问题很多，千万别错，否则项目启动可能会失败）中配置使用druid，其中很重要的是`type: com.alibaba.druid.pool.DruidDataSource`,这里表明你使用的是druid数据源，
 不写的话则使用springboot默认为你配置的数据源：<br>
   ```spring:
     datasource:
