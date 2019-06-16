@@ -42,7 +42,7 @@ spring boot配置阿里的druid数据库连接池<br>
 ```
 3.向容器中加入druid组件，springboot推荐使用全注解的方式，新建一个类<br>
 @Configuration表明这是一个配置类，一定要加，不然springboot识别不到<br>
- @ConfigurationProperties(prefix = "spring.datasource")和@Bean将配置文件中的datasource的参数拿来并将组件加入到ioc容器中去，
+ @ConfigurationProperties(prefix = "spring.datasource")是将配置文件的值注入，@Bean将配置文件中的datasource的参数拿来并将其以组件的形式加入到ioc容器中去，
  这一步也很关键。
 ```
 import com.alibaba.druid.pool.DruidDataSource;
