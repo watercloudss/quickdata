@@ -2,7 +2,7 @@ spring:
   datasource:
     username: root
     password: 123
-    url: jdbc:mysql://192.168.1.19:3307/jdbc
+    url: jdbc:mysql://127.0.0.1:3306/jdbc
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
@@ -21,6 +21,6 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-    #    schema:
+#    schema:
 #      - classpath:department.sql
 
