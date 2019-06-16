@@ -102,6 +102,6 @@ public class DruidConfig {
     }
 }
 ```
-按照以上步骤即可使用druid<br>
+按照以上步骤即可使用druid,每当你调用sql时，都可以在后台管理页面看到具体的状态<br>
 最后，下面是配置好的druid管理图片<br>
 <img src="https://raw.githubusercontent.com/watermakers/images/master/restful-crud-img/15.PNG"/>
